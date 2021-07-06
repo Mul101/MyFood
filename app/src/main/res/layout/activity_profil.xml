@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profil"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerVertical="true"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        tools:src="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/name_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="22dp"
+        android:text="nama"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/img_profil"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="104dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="20dp"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_profil" />
+
+    <TextView
+        android:id="@+id/email_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="email_isi"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/name_profil" />
+
+    <TextView
+        android:id="@+id/github"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="20dp"
+        android:text="@string/github"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/github_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="github"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/github"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.132" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
